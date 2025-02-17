@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="donation-box">
+        Donations raised: $724.02
+    </div>
+    <div class="center-text">
+        Need a script? Contact me for a fast response, it's free!
+    </div>
+    <button class="contact-button" onclick="openModal()">Contact me</button>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="gmail-logo.png" alt="Gmail Logo" class="gmail-logo">
+            <p>nextgencodervs@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="skill">
+            <img src="html-logo.png" alt="HTML Logo">
+            <p>HTML</p>
+        </div>
+        <div class="skill">
+            <img src="javascript-logo.png" alt="JavaScript Logo">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="css-logo.png" alt="CSS Logo">
+            <p>CSS</p>
+        </div>
+        <div class="skill">
+            <img src="python-logo.png" alt="Python Logo">
+            <p>Python</p>
+        </div>
+        <div class="skill">
+            <img src="lua-logo.png" alt="Lua Logo">
+            <p>Lua</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('contact-modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('contact-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
